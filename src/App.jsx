@@ -5,6 +5,7 @@ import './App.css'
 import { nbOcurance } from './utils/nb_ocurance'
 import { paladrome } from './utils/paladrome'
 import { second_max } from './utils/second_max'
+import { sommeNb } from './utils/somme_nb'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,7 +25,8 @@ function App() {
   reponse = second_max(tab)
   console.log("Exercice 3: le second plus grand est " + reponse)
 
-  
+  reponse = sommeNb(4729)
+  console.log("Exercice 4 : la somme est " + reponse)
 
   return (
     <>
