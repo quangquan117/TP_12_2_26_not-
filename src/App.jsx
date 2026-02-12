@@ -8,6 +8,7 @@ import { second_max } from './utils/second_max'
 import { sommeNb } from './utils/somme_nb'
 import { somme_nb_bis } from './utils/Somme_nb_bis'
 import { fill_tab } from './utils/fill_tab'
+import { replaceByZero } from './utils/replaceByZero'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
   const recherche = 2
   const testpalindrome = "kaya"
   const number_4and5 = 4729
+  const hello_world = "helloworld"
 
   let reponse = nbOcurance(tab, recherche);
   console.log("Exercice 1: recherche " + recherche + " dans " + tab + " la reponse est : " + reponse)
@@ -34,6 +36,8 @@ function App() {
   console.log("Exercice 5 : la somme est " + somme_nb_bis(number_4and5))
 
   fill_tab(5, 5);
+
+  console.log("Exercice 7 : le nouveua mot est " + replaceByZero(hello_world, 2))
 
   return (
     <>
