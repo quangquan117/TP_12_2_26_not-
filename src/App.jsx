@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { nbOcurance } from './utils/nb_ocurance'
 import { paladrome } from './utils/paladrome'
+import { second_max } from './utils/second_max'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,7 +21,10 @@ function App() {
   else
     console.log("Exercice 2 : no paladrome")
 
+  reponse = second_max(tab)
+  console.log("Exercice 3: le second plus grand est " + reponse)
 
+  
 
   return (
     <>
