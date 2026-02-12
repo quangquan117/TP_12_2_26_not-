@@ -9,6 +9,8 @@ import { sommeNb } from './utils/somme_nb'
 import { somme_nb_bis } from './utils/Somme_nb_bis'
 import { fill_tab } from './utils/fill_tab'
 import { replaceByZero } from './utils/replaceByZero'
+import { moyen } from './utils/moyen'
+import { replaceCell } from './utils/replaceCell'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +19,16 @@ function App() {
   const testpalindrome = "kaya"
   const number_4and5 = 4729
   const hello_world = "helloworld"
+  const tableau_2dimention = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+  ]
+  const tableau_ex9 = [
+    [1, 2],
+    [3, 4],
+    [4, 5]
+  ]
 
   let reponse = nbOcurance(tab, recherche);
   console.log("Exercice 1: recherche " + recherche + " dans " + tab + " la reponse est : " + reponse)
@@ -38,6 +50,10 @@ function App() {
   fill_tab(5, 5);
 
   console.log("Exercice 7 : le nouveua mot est " + replaceByZero(hello_world, 2))
+
+  console.log("Exercice 8 : la moyen est " + moyen(tableau_2dimention))
+
+  console.log(replaceCell(tableau_ex9, 1, 0, 20))
 
   return (
     <>
