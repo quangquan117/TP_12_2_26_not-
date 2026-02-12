@@ -7,6 +7,7 @@ import { paladrome } from './utils/paladrome'
 import { second_max } from './utils/second_max'
 import { sommeNb } from './utils/somme_nb'
 import { somme_nb_bis } from './utils/Somme_nb_bis'
+import { fill_tab } from './utils/fill_tab'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -32,7 +33,7 @@ function App() {
 
   console.log("Exercice 5 : la somme est " + somme_nb_bis(number_4and5))
 
-  
+  fill_tab(5, 5);
 
   return (
     <>
