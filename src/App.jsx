@@ -11,6 +11,8 @@ import { fill_tab } from './utils/fill_tab'
 import { replaceByZero } from './utils/replaceByZero'
 import { moyen } from './utils/moyen'
 import { replaceCell } from './utils/replaceCell'
+import { triangle } from './utils/triangle'
+import { chiffrement } from './utils/chiffrement'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -54,6 +56,10 @@ function App() {
   console.log("Exercice 8 : la moyen est " + moyen(tableau_2dimention))
 
   console.log(replaceCell(tableau_ex9, 1, 0, 20))
+
+  // console.log(triangle(1,2,3));
+
+  console.log("Chiffrement : " + chiffrement("BONJOUR", "CLE"))
 
   return (
     <>
